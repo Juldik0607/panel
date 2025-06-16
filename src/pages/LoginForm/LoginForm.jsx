@@ -8,7 +8,7 @@ const LoginForm = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({ username, password }); // просто передаём данные наверх
+    onSubmit({ username, password });
   };
 
   return (

@@ -79,7 +79,7 @@ const HomePage = () => {
                   <strong
                     style={{ display: "flex", alignItems: "center", gap: 4 }}
                   >
-                    ID
+                    № з/п
                     {sortBy === "id" &&
                       (sortDirection === "asc" ? (
                         <ArrowUpwardIcon fontSize="small" />
@@ -189,6 +189,18 @@ const HomePage = () => {
             </TableBody>
           </Table>
         </TableContainer>
+        <Button
+          variant="outlined"
+          color="error"
+          sx={{ mt: 2 }}
+          onClick={() =>
+            alert(
+              "Ви залогінені. Уточніть, як правильно видаляти всіх користувачів, щоб не видалити й себе :)"
+            )
+          }
+        >
+          Видалити всіх користувачів
+        </Button>
         {userToDelete && (
           <ConfirmDialog
             open={Boolean(userToDelete)}

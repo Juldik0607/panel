@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux"; // 💡 добавлено
+import { useDispatch } from "react-redux";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import HomePage from "./pages/HomePage/HomePage";

@@ -108,9 +108,24 @@ const EditUser = () => {
               required
               fullWidth
             />
-            <Button type="submit" variant="contained" color="primary">
-              Зберегти
-            </Button>
+            <Stack direction="row" spacing={2}>
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                sx={{ flex: 1 }}
+              >
+                ЗБЕРЕГТИ
+              </Button>
+              <Button
+                variant="outlined"
+                color="secondary"
+                onClick={() => navigate(`/user/${user.id}`)}
+                sx={{ flex: 1 }}
+              >
+                СКАСУВАТИ
+              </Button>
+            </Stack>
           </Stack>
         </form>
       </Paper>
